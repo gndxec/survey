@@ -146,7 +146,7 @@ REST_FRAMEWORK = {
 }
 
 #servidor Correo
-DEFAULT_FROM_EMAIL = ('CORREO')
+DEFAULT_FROM_EMAIL = 'gndxec@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
