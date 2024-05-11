@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    'surveyapp'
+    'surveyapp',
+    'email_service'
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,12 @@ REST_FRAMEWORK = {
     )
   
 }
+
+#servidor Correo
+DEFAULT_FROM_EMAIL = 'gndxec@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = DEFAULT_FROM_EMAIL
+EMAIL_HOST_PASSWORD ='stet egqn wpgy cpdv'
