@@ -1,8 +1,7 @@
 from rest_framework.routers import DefaultRouter
-from surveyapp.api.views import surveyViewSet
+from surveyapp.api.views import SurveyViewSet
 
 router = DefaultRouter()
-router.register('surveys', surveyViewSet, basename='survey')
-urlpatterns = [
-    router.urls
-]
+router.register('surveys', SurveyViewSet, basename='survey')
+urlpatterns = router.urls
+
